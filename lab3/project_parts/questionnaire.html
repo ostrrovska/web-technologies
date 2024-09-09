@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+
+    <h1>Анкета</h1>
+
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>Основна інформація</legend>
+            
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required><br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Пароль (мін. 6 символів)" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="off" required><br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Введіть номер телефону" required><br><br>
+
+            <label for="birthdate">Дата народження:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Додаткова інформація</legend>
+
+            <label>Стать:</label><br>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Чоловік</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жінка</label><br><br>
+
+            <label>Хобі:</label><br>
+            <input type="checkbox" id="sports" name="hobby" value="sports" checked>
+            <label for="sports">Спорт</label><br>
+            <input type="checkbox" id="music" name="hobby" value="music">
+            <label for="music">Музика</label><br>
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading">Читання</label><br><br>
+
+            <label for="education">Освіта:</label>
+            <select id="education" name="education">
+                <option value="none" selected>Не обрано</option>
+                <option value="highschool">Середня освіта</option>
+                <option value="bachelor">Бакалавр</option>
+                <option value="master">Магістр</option>
+            </select><br><br>
+
+            <label for="file">Завантажити файл (аудіо):</label>
+            <input type="file" id="file" name="file" accept="audio/*"><br><br>
+        </fieldset>
+
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Очистити">
+        <br>
+    
+    </form>
+<h1 align = 'center'><a href="../index.html" target="_blank">Повернутися на головну</a></h1>
+</body>
+</html>
