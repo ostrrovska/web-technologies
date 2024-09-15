@@ -1,0 +1,48 @@
+
+a {
+    color: violet; 
+    text-decoration: underline;
+}
+
+.main-link {
+    color: green;
+}
+
+.square-list {
+    list-style-type: square;
+    margin: 20px;
+    margin-top: auto;
+}
+.icon-list li {
+    position: relative; 
+    margin: 0px;
+}
+.icon-list li::before {
+   
+    content:"\2713";
+}
+
+ul ul ul {
+    list-style-type: none; 
+}
+ul ul {
+    list-style-type: none; 
+}
+
+
+.square-list a {
+    text-decoration: none;
+}
+
+
+ol {
+    list-style-position: inside;
+  margin-right: 20px;
+  margin-left: 0px;
+
+}
+
+.main-menu ul {
+    padding-left: 20px;
+}
+
