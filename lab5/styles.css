@@ -1,0 +1,107 @@
+div {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+}
+
+ul.level-1{
+    background-color: rgb(103, 158, 128);
+    padding-right: 20px;
+    padding-left: 50px;
+   
+
+}
+ul.level-1 li {
+    
+  
+    background-image: url('rule.png');
+    background-repeat: no-repeat;
+    background-position: top left center;
+    padding-left: 50px;
+}
+
+ul.level-2 {
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    margin-bottom: 10px;
+    padding-left: 40px;
+    
+}
+
+
+ul.level-1 li:nth-child(1) ul.level-2 li:nth-child(1) {
+    background-image: url('ad_units.png');
+}
+
+ul.level-1 li:nth-child(1) ul.level-2 li:nth-child(2) {
+    background-image: url('airplane_ticket.png');
+}
+
+ul.level-1 li:nth-child(1) ul.level-2 li:nth-child(3) {
+    background-image: url('hotel.png');
+}
+
+ul.level-1 li:nth-child(1) ul.level-2 li:nth-child(4) {
+    background-image: url('car_rental.png');
+}
+
+ul.level-1 li:nth-child(2) ul.level-2 li:nth-child(1) {
+    background-image: url('local_bar.png');
+}
+
+ul.level-1 li:nth-child(2) ul.level-2 li:nth-child(2) {
+    background-image: url('casino.png');
+}
+
+ul.level-1 li:nth-child(2) ul.level-2 li:nth-child(3) {
+    background-image: url('museum.png');
+}
+
+ul.level-1 li:nth-child(2) ul.level-2 li:nth-child(4) {
+    background-image: url('festival.png');
+}
+
+
+
+ul.level-2 li span.level-2 {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+span {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+span.level-1 {
+    
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+span.level-2 {
+
+    background-color: rgb(218, 106, 32);
+    margin-bottom: 10px;
+    
+}
+
+
