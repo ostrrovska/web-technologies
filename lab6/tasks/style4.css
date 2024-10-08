@@ -1,0 +1,90 @@
+html, body { margin: 0; padding: 0; height: 100%; }
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+.head {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: inline-block;
+    padding: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.logo > img {
+    width: 100px;
+}
+.navigation {
+    user-select: none;
+    margin-left: auto;
+    list-style: none;
+}
+.navigation li {
+    float: left;
+    margin: 0 10px;
+}
+.navigation a {
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #ff82de;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div {
+    padding: 20px;
+}
+
+.div-wrapper{
+    margin: 20px 50px;
+    display: inline-block;
+    text-align: justify;
+    position: relative;
+}
+.div-border {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ae6d14;
+    width: 250px;
+    height: 300px;
+    margin: 80px;
+}
+
+.div-border img {
+    width: 250px;
+    margin: 0;
+    display: block;
+    padding: 0;
+
+}
+
+.shadow-type-1 {
+    box-shadow: #ae6d14 -10px -10px 5px;
+}
+.shadow-type-2 {
+    box-shadow: #ae6d14 0 0 10px 10px;
+}
+.shadow-type-3 {
+    box-shadow: rgba(174, 109, 20, 0.49) 5px 5px 10px;
+}
+.shadow-type-4 {
+    box-shadow: #ae6d14 0 0 30px;
+}
+.shadow-type-5 {
+    box-shadow: inset 0 10px green, inset 0 -10px yellow, inset 10px 0 red, inset -10px 0 blue;
+}
+.shadow-type-6 {
+    box-shadow: green 0 15px 0 -5px, yellow 0 -15px 0 -5px;
+}
