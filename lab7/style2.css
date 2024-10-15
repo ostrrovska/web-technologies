@@ -1,0 +1,110 @@
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #f0f0f0;
+}
+
+.block {
+    width: 300px;
+    height: 150px;
+    margin: 15px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.red {
+    background-color: red;
+    opacity: 1;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#block1:hover + #block2 {
+    opacity: 1;
+}
+
+#block2:hover + #block3 {
+    opacity: 1;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.block {
+    width: 300px;
+    height: 150px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+}
+
+.red {
+    background-color: red;
+}
+
+.green, .blue {
+    position: absolute;
+    top: 100%;
+    left: -85;
+    width: 150%;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#block1:hover #block2,
+#block2:hover {
+    opacity: 1;
+    pointer-events: all; 
+}
+
+#block2:hover #block3,
+#block3:hover {
+    opacity: 1;
+    pointer-events: all;
+}
+
