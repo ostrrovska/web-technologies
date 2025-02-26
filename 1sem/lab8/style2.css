@@ -1,0 +1,324 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-color: #333;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+    background-color:#171717;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#171717;
+    height: 130px;
+}
+
+.logo img{
+   width: 300px;
+   height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+nav ul li {
+    margin-left: 50px;
+    border: 10px #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+nav ul li a:hover {
+    color: rgba(255, 20, 147, 1); /* Яскравий рожевий колір */
+    text-shadow: 0 0 10px rgba(255, 20, 147, 1), /* Світіння */
+                 0 0 20px rgba(255, 20, 147, 0.8); /* Менше світіння */
+}
+
+.intro {
+    text-align: center;
+    background: linear-gradient(135deg, #2b003b, #4e00a2, #0f005c);
+    padding: 160px 20px 40px;
+    color: #fff; /* Білий текст для контрасту */
+    text-shadow: 0 0 10px rgba(255, 20, 147, 1), /* Яскравий рожевий */
+                 0 0 20px rgba(255, 20, 147, 0.8), /* Менш яскравий рожевий */
+                 0 0 30px rgba(255, 20, 147, 0.5); /* Додатковий розмитий ефект */
+}
+
+.portfolio-header {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-header h2 {
+    margin-left: 150px;
+}
+
+.portfolio-header .btn {
+    margin-right: 150px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.portfolio-item img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(78, 0, 162, 1), /* Яскравий фіолетовий */
+    0 0 20px rgba(78, 0, 162, 0.7), /* Менш яскравий фіолетовий */
+    0 0 30px rgba(78, 0, 162, 0.5); /* Додатковий розмитий ефект */
+transition: box-shadow 0.3s ease; /* Плавний ефект при наведенні */
+}
+.portfolio-item img:hover {
+    box-shadow: 0 0 20px rgba(255, 20, 147, 1), /* Яскравий рожевий при наведенні */
+                0 0 30px rgba(255, 20, 147, 0.8), /* Менш яскравий рожевий при наведенні */
+                0 0 40px rgba(255, 20, 147, 0.5); /* Додатковий розмитий ефект при наведенні */
+}
+
+.contact {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contact h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-us {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Плавний перехід */
+}
+
+.contact-us:hover {
+    color: rgba(255, 20, 147, 1); /* Яскравий рожевий колір тексту */
+    border-color: rgba(255, 20, 147, 1); /* Рожевий колір рамки */
+    text-shadow: 0 0 10px rgba(255, 20, 147, 1), /* Світіння тексту */
+                 0 0 20px rgba(255, 20, 147, 0.8); /* Менше світіння */
+    box-shadow: 0 0 20px rgba(255, 20, 147, 1), /* Яскравий рожевий при наведенні */
+                0 0 30px rgba(255, 20, 147, 0.8), /* Менш яскравий рожевий при наведенні */
+                0 0 40px rgba(255, 20, 147, 0.5); /* Додатковий розмитий ефект при наведенні */
+}
+
+
+.btn {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 10px #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.btn:hover{
+    color: rgba(255, 20, 147, 1); /* Яскравий рожевий колір тексту */
+   
+    border-color: rgba(255, 20, 147, 1); /* Рожевий колір рамки */
+    text-shadow: 0 0 10px rgba(255, 20, 147, 1), /* Світіння тексту */
+                 0 0 20px rgba(255, 20, 147, 0.8); /* Менше світіння */
+}
+
+
+.services {
+    margin-bottom: 20px;
+    padding: 50px 40px;
+    background: linear-gradient(135deg, #2b003b, #4e00a2, #0f005c);
+    color: #fff; /* Білий текст для контрасту */
+    text-shadow: 0 0 10px rgba(255, 20, 147, 1), /* Яскравий рожевий */
+                 0 0 20px rgba(255, 20, 147, 0.8), /* Менш яскравий рожевий */
+                 0 0 30px rgba(255, 20, 147, 0.5); /* Додатковий розмитий ефект */
+}
+
+.service-list {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    width: 200px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.journal {
+    padding: 40px 20px;
+    background: #171717;
+    text-align: center;
+    
+}
+.journal>h2,p{
+    color: white;
+}
+
+.journal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+article {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px; /* Відстань між картинкою та текстом */
+    flex-direction: row;
+    min-width: 340px; /* Встановлюємо мінімальну ширину для блоків */
+    
+}
+
+article img {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.journal-content {
+    text-align: left;
+}
+
+.journal-content span {
+    font-size: 12px;
+    color: #888;
+}
+
+.journal-content h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.journal-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2b003b, #4e00a2, #0f005c);
+    color: white;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .journal-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item {
+        width: 100%;
+    }
+    .journal-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column; /* Вертикальне розташування для мобільних */
+        align-items: flex-start;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    margin: 4px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    .burger-menu {
+        display: flex;
+    }
+}
+

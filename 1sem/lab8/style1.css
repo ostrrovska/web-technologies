@@ -1,0 +1,106 @@
+* {
+    /*color: #666666;*/  /*normal*/
+    color: #444444; /*dark*/
+    /*color: #7f7f7f;*/ /*light*/
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-weight: 600;
+    margin:0;
+}
+
+.wrapper {
+    width: 400px;
+    background: #f1f1f1;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+img {
+    width: 90px;
+}
+
+h1 ~ p {
+    color: #666666;
+    font-weight: 400;
+}
+
+.today-block *{
+    font-weight: 400;
+    color: #666666;
+}
+.today-block,
+.today-temperature {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.today-temperature {
+    align-items: center;
+}
+.today-temperature p {
+    display: inline-flex;
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.temperature-sign {
+    vertical-align: top;
+    color: #7f7f7f;
+    margin-top: 5px;
+}
+.today-temperature .temperature-sign {
+    font-size: 20px;
+}
+.temperature-block .temperature-sign {
+    font-size: 10px;
+}
+.today-block {
+    flex-flow: row wrap;
+    align-items: center;
+}
+.today-additional-info {
+    height: 100%;
+    margin-left: auto;
+}
+.today-additional-info p {
+    color: #7f7f7f;
+}
+.additional-value {
+    color: #666666;
+}
+
+.week-forecast {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+.day-weather {
+    font-size: 14px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px rgba(127, 127, 127, 0.51);
+    border-style: solid none;
+}
+.day-name {
+    width: 25%;
+}
+.day-weather img{
+    width: 80px;
+}
+
+.temperature-block {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: 100;
+}
+.min-temperature {
+    margin-top: 5px;
+    color: #7f7f7f;
+}
+.pollen-text {
+    color: #7f7f7f;
+}

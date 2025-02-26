@@ -1,0 +1,73 @@
+
+.text-background > span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+div .text-background span {
+    background-color: yellow;
+}
+
+span > span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+ol span > span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section > p {
+    text-shadow: 3px 3px 5px #000; 
+    text-indent: 50px;
+}
+
+li > ul {
+    list-style: none;
+    padding-left: 20px; 
+}
+
+li > ul > li {
+    position: relative; 
+    padding-left: 25px; 
+}
+
+li > ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-image: url('icon.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+
+div > .text-background {
+    word-spacing: 50px;
+}
+
+
+.text-bold > p {
+    font-weight: bold;
+}
+
+
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+
+img + p {
+    background-color: brown;
+}
+
+
+section ~ p {
+    color: red;
+}

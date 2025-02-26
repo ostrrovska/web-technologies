@@ -1,9 +1,10 @@
-
-function displayStudentName() {
+function displayStudentName(event) {
     const studentName = "Kateryna";
-    const button = document.querySelector("#displayButton");
-    button.textContent = studentName;
+    event.target.textContent = studentName;
 }
 
-const button = document.querySelector("#displayButton");
-button.addEventListener("mousedown", displayStudentName);
+const buttons = document.querySelectorAll("ul li .displayButton");
+
+buttons.forEach(button => {
+    button.addEventListener("mousedown", displayStudentName);
+});
