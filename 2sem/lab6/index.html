@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список товарів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Товари</h1>
+    <div id="total">Загальна вартість: 0 грн</div>
+</header>
+
+<section id="filters">
+    <h2>Фільтрація</h2>
+    <div class="filter-btns">
+        <button data-category="all">Усі</button>
+        <button data-category="Електроніка">Електроніка</button>
+        <button data-category="Одяг">Одяг</button>
+        <button data-category="Іграшки">Іграшки</button>
+    </div>
+</section>
+
+<section id="sorting">
+    <h2>Сортування</h2>
+    <div class="sort-btns">
+        <button data-sort="price">За ціною</button>
+        <button data-sort="created">За створенням</button>
+        <button data-sort="updated">За оновленням</button>
+        <button id="reset-sort">Скинути</button>
+    </div>
+</section>
+
+<main>
+    <p id="empty">Наразі список товарів пустий. Додайте новий товар.</p>
+    <div id="list"></div>
+</main>
+
+<button id="add">Додати новий товар</button>
+
+<div id="modal" class="hidden">
+    <form id="form">
+        <h2 id="form-title">Новий товар</h2>
+        <input type="hidden" id="id">
+        <label>Назва: <input type="text" id="name" required></label>
+        <label>Ціна: <input type="number" id="price" min="0" required></label>
+        <label>Категорія:
+            <select id="category" required>
+                <option value="">Оберіть категорію</option>
+                <option value="Електроніка">Електроніка</option>
+                <option value="Одяг">Одяг</option>
+                <option value="Іграшки">Іграшки</option>
+            </select>
+        </label>
+        <label>Зображення (URL): <input type="url" id="image" required></label>
+        <div class="actions">
+            <button type="submit">Зберегти</button>
+            <button type="button" id="cancel">Скасувати</button>
+        </div>
+    </form>
+</div>
+
+<div id="toast" class="hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

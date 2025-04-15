@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Годинник</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="section clock-section">
+    <h2>🕒 Цифровий годинник</h2>
+    <div id="clock" class="clock"></div>
+  </div>
+
+  <div class="section timer-section">
+    <h2>⏳ Таймер</h2>
+    <input type="datetime-local" id="targetDate">
+    <div id="countdown" class="countdown"></div>
+  </div>
+
+  <div class="section calendar-section">
+    <h2>📅 Календар</h2>
+    <input type="month" id="monthPicker">
+    <div id="calendar" class="calendar-grid"></div>
+  </div>
+
+  <div class="section birthday-section">
+    <h2>🎂 Мій день народження</h2>
+    <input type="date" id="birthdayDate">
+    <div id="birthdayCountdown" class="countdown"></div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

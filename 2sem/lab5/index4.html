@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаховий магазин</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+<div class="container">
+    <h1>♔ Chess Store ♚</h1>
+
+    <div class="section">
+        <h2>Додати новий продукт</h2>
+        <input type="text" id="productName" placeholder="Назва">
+        <input type="number" id="productPrice" placeholder="Ціна">
+        <input type="number" id="productStock" placeholder="Кількість">
+        <button onclick="addProduct()">Додати</button>
+    </div>
+
+    <div class="section">
+        <h2>Пошук та редагування</h2>
+        <input type="text" id="searchInput" placeholder="Назва продукту">
+        <button onclick="searchProduct()">Шукати</button>
+        <div id="searchResults"></div>
+    </div>
+
+    <div class="section">
+        <h2>Змінити статус</h2>
+        <input type="text" id="updateId" placeholder="ID продукту">
+        <input type="number" id="updatePrice" placeholder="Нова ціна">
+        <input type="number" id="updateStock" placeholder="Нова кількість">
+        <button onclick="updateProduct()">Оновити</button>
+    </div>
+
+    <div class="section">
+        <h2>Видалити продукт</h2>
+        <input type="text" id="deleteProductId" placeholder="ID продукту">
+        <button onclick="deleteProduct()">Видалити</button>
+    </div>
+
+    <div class="section">
+        <h2>Зробити замовлення</h2>
+        <input type="text" id="orderProductId" placeholder="ID продукту">
+        <input type="number" id="orderQuantity" placeholder="Кількість">
+        <button onclick="placeOrder()">Замовити</button>
+    </div>
+
+    <div class="section">
+        <h2>Історія замовлень</h2>
+        <div id="orderHistory"></div>
+    </div>
+
+    <div class="section">
+        <h2>Каталог продуктів</h2>
+        <div id="productList"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

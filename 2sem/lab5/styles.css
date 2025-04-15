@@ -1,0 +1,29 @@
+.bulb {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    transition: background-color 0.3s, filter 0.3s;
+    background-color: #ccc;
+}
+
+.bulb.on.incandescent { background-color: #ffd700; }
+.bulb.on.energy-saving { background-color: #90ee90; }
+.bulb.on.led { background-color: #add8e6; }
+
+.controls {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+select {
+    padding: 5px;
+}
