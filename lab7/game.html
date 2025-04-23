@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Wild Gunman</title>
+    <link rel="stylesheet" href="css/game.css"/>
+</head>
+<body>
+<section class="menu">
+    <h1 class="menu-title">Wild Gunman</h1>
+    <button class="button button-start-game">Start Game</button>
+</section>
+
+<div class="wrapper">
+    <section class="game-panels">
+        <div class="players-panel">
+            <div class="players-panel__you">Your time</div>
+            <div class="players-panel__gunman">Gunman's time</div>
+        </div>
+        <div class="time-panel">
+            <div class="you-time">0.00</div>
+            <div class="gunman-time">0.00</div>
+        </div>
+        <div class="score-panel">
+            <div class="score-panel__score">Score:<span class="score-panel__score_num">0</span></div>
+            <div class="score-panel__level">Level 1</div>
+        </div>
+    </section>
+
+    <div class="message"></div>
+
+    <section class="game-screen">
+        <div class="gunman"></div>
+        <button class="button button-restart">Restart</button>
+        <button class="button button-next-level">Next Level</button>
+    </section>
+</div>
+
+<section class="win-screen">
+    <h2 class="win-screen__title">Victory!</h2>
+    <div class="score-panel__score">Score:<span class="score-panel__win-score_num">0</span></div>
+</section>
+<script src="js/game.js"></script>
+</body>
+</html>
