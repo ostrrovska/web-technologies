@@ -1,0 +1,233 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-50);
+    background-color: var(--background-950);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--background-800);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.column-header {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-task {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-50);
+}
+
+.add-task:hover {
+    color: var(--text-100);
+}
+
+.tasks {
+    min-height: 100px;
+}
+
+.task {
+    background-color: var(--background-900);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+    cursor: grab;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task:active {
+    cursor: grabbing;
+}
+
+.task.dragging {
+    opacity: 0.5;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-placeholder {
+    border: 2px dashed var(--text-100);
+    background-color: rgba(0, 121, 191, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.task-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.task-description {
+    color: var(--text-100);
+    font-size: 14px;
+}
+
+.task-form {
+    display: none;
+    margin-top: 10px;
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.task-form textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #5aac44;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #ddd;
+}
+
+.column.highlight {
+    background-color: var(--background-700);
+}
+
+@media (max-width: 768px) {
+    .kanban-board {
+        flex-direction: column;
+    }
+
+    .column {
+        min-width: 100%;
+    }
+}
+
+
+:root {
+    --text-50: #e7f4fd;
+    --text-100: #d0e9fb;
+    --text-200: #a1d3f7;
+    --text-300: #71bdf4;
+    --text-400: #42a7f0;
+    --text-500: #1392ec;
+    --text-600: #0f74bd;
+    --text-700: #0b578e;
+    --text-800: #083a5e;
+    --text-900: #041d2f;
+    --text-950: #020f18;
+
+    --background-50: #e8f4fc;
+    --background-100: #d1eafa;
+    --background-200: #a4d4f4;
+    --background-300: #76bfef;
+    --background-400: #48a9ea;
+    --background-500: #1b94e4;
+    --background-600: #1576b7;
+    --background-700: #105989;
+    --background-800: #082435;
+    --background-900: #051e2e;
+    --background-950: #030f17;
+
+    --primary-50: #e9f4fc;
+    --primary-100: #d3e9f8;
+    --primary-200: #a7d3f1;
+    --primary-300: #7bbeea;
+    --primary-400: #4fa8e3;
+    --primary-500: #2292dd;
+    --primary-600: #1c75b0;
+    --primary-700: #155884;
+    --primary-800: #0e3a58;
+    --primary-900: #071d2c;
+    --primary-950: #030f16;
+
+    --secondary-50: #eaeafa;
+    --secondary-100: #d5d5f6;
+    --secondary-200: #ababed;
+    --secondary-300: #8282e3;
+    --secondary-400: #5858da;
+    --secondary-500: #2e2ed1;
+    --secondary-600: #2525a7;
+    --secondary-700: #1c1c7d;
+    --secondary-800: #121254;
+    --secondary-900: #09092a;
+    --secondary-950: #050515;
+
+    --accent-50: #fefbe7;
+    --accent-100: #fdf7ce;
+    --accent-200: #faee9e;
+    --accent-300: #f8e66d;
+    --accent-400: #f6dd3c;
+    --accent-500: #f4d50b;
+    --accent-600: #c3aa09;
+    --accent-700: #928007;
+    --accent-800: #615505;
+    --accent-900: #312b02;
+    --accent-950: #181501;
+
+    --warning-50: #fee7e7;
+    --warning-100: #fdcece;
+    --warning-200: #fa9e9e;
+    --warning-300: #f86d6d;
+    --warning-400: #f63c3c;
+    --warning-500: #f40b0b;
+    --warning-600: #c30909;
+    --warning-700: #920707;
+    --warning-800: #610505;
+    --warning-900: #310202;
+    --warning-950: #180101;
+}

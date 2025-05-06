@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Pair Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Memory Pair Game</h1>
+<div class="game-container">
+    <div class="settings-panel">
+        <h2>Game Settings</h2>
+        <form class="settings-form" id="settingsForm">
+            <div class="form-group">
+                <label for="gameMode">Game Mode</label>
+                <select id="gameMode">
+                    <option value="single">Single Player</option>
+                    <option value="multi">Two Players</option>
+                </select>
+            </div>
+
+            <div class="players-container">
+                <div class="player-input form-group">
+                    <label for="player1">Player 1 Name</label>
+                    <input type="text" id="player1" value="Player 1" required>
+                </div>
+
+                <div class="player-input form-group" id="player2Group" style="display: none;">
+                    <label for="player2">Player 2 Name</label>
+                    <input type="text" id="player2" value="Player 2">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="rows">Rows</label>
+                <select id="rows">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cols">Columns</label>
+                <select id="cols">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy (3 minutes)</option>
+                    <option value="normal">Normal (2 minutes)</option>
+                    <option value="hard">Hard (1 minute)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rounds">Number of Rounds</label>
+                <input type="number" id="rounds" min="1" value="1">
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="start-btn" id="startBtn">Start Game</button>
+                <button type="button" class="reset-btn" id="resetBtn">Reset Settings</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="stats-panel" id="statsPanel" style="display: none;">
+        <div class="stat">
+            <div>Time Left</div>
+            <div class="stat-value" id="timeLeft">03:00</div>
+        </div>
+        <div class="stat">
+            <div>Current Player</div>
+            <div class="stat-value" id="currentPlayer"><span class="current-player">Player 1</span></div>
+        </div>
+        <div class="stat">
+            <div>Moves</div>
+            <div class="stat-value" id="moves">0</div>
+        </div>
+        <div class="stat">
+            <div>Round</div>
+            <div class="stat-value" id="currentRound">1/1</div>
+        </div>
+        <button type="button" class="restart-btn" id="restartBtn">Restart</button>
+    </div>
+
+    <div class="game-board" id="gameBoard"></div>
+</div>
+
+<div class="results-modal" id="resultsModal">
+    <div class="modal-content">
+        <h2 class="modal-title">Game Results</h2>
+        <div id="resultsContent"></div>
+        <button type="button" class="close-btn" id="closeResultsBtn">Close</button>
+    </div>
+</div>
+</body>
+</html>

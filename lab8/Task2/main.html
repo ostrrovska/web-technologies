@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карусель зображень</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Карусель зображень</h1>
+
+<div class="slider-container" id="sliderContainer">
+    <div class="slider" id="slider">
+    </div>
+
+    <button class="slider-arrow slider-arrow-left" id="prevBtn">&#10094;</button>
+    <button class="slider-arrow slider-arrow-right" id="nextBtn">&#10095;</button>
+</div>
+
+<div class="slider-dots" id="sliderDots">
+
+</div>
+
+<div class="autoplay-control">
+    <label>
+        <input type="checkbox" id="autoplayCheckbox" checked> Автопрокрутка
+    </label>
+    <span>Інтервал (мс):</span>
+    <input type="number" id="autoplayInterval" value="3000" min="500" step="500">
+</div>
+</body>
+</html>
