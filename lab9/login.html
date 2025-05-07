@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Авторизація</h1>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Логін*</label>
+            <input type="text" id="username" placeholder="Введіть ваш логін">
+            <small class="error" id="usernameError"></small>
+        </div>
+
+        <div class="form-group password-container">
+            <label for="password">Пароль*</label>
+            <input type="password" id="password" placeholder="Введіть ваш пароль">
+            <i class="fas fa-eye password-toggle" id="togglePassword"></i>
+            <small class="error" id="passwordError"></small>
+        </div>
+
+        <div class="form-group remember-me">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Запам'ятати мене</label>
+        </div>
+
+        <button type="submit">Увійти</button>
+    </form>
+
+    <div class="success-message" id="successMessage"></div>
+    <div class="error-message" id="errorMessage"></div>
+
+    <div class="links">
+        <a href="#" id="forgotPassword">Забули пароль?</a>
+        <a href="register.html">Реєстрація</a>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

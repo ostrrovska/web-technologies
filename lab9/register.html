@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Реєстрація</h1>
+    <form id="registerForm">
+        <div class="form-section">
+            <h2>Персональна інформація</h2>
+
+            <div class="form-group">
+                <label for="firstName">Ім'я*</label>
+                <input type="text" id="firstName" placeholder="Введіть ваше ім'я">
+                <small class="error" id="firstNameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Прізвище*</label>
+                <input type="text" id="lastName" placeholder="Введіть ваше прізвище">
+                <small class="error" id="lastNameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="birthDate">Дата народження*</label>
+                <input type="date" id="birthDate">
+                <small class="error" id="birthDateError"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Стать*</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Чоловіча</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Жіноча</label>
+                    </div>
+                </div>
+                <small class="error" id="genderError"></small>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Контактна інформація</h2>
+
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Введіть ваш email">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон*</label>
+                <input type="tel" id="phone" placeholder="+380XXXXXXXXX">
+                <small class="error" id="phoneError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Країна*</label>
+                <select id="country">
+                    <option value="">Виберіть країну</option>
+                    <option value="UA">Україна</option>
+                    <option value="PL">Польща</option>
+                    <option value="DE">Німеччина</option>
+                </select>
+                <small class="error" id="countryError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Місто*</label>
+                <select id="city" disabled>
+                    <option value="">Спочатку виберіть країну</option>
+                </select>
+                <small class="error" id="cityError"></small>
+            </div>
+        </div>
+
+
+        <div class="form-section">
+            <h2>Безпека</h2>
+
+            <div class="form-group password-container">
+                <label for="password">Пароль*</label>
+                <input type="password" id="password" placeholder="Введіть пароль">
+                <i class="fas fa-eye password-toggle" id="togglePassword"></i>
+                <small class="error" id="passwordError"></small>
+            </div>
+
+            <div class="form-group password-container">
+                <label for="confirmPassword">Підтвердіть пароль*</label>
+                <input type="password" id="confirmPassword" placeholder="Підтвердіть пароль">
+                <i class="fas fa-eye password-toggle" id="toggleConfirmPassword"></i>
+                <small class="error" id="confirmPasswordError"></small>
+            </div>
+        </div>
+
+        <button type="submit">Зареєструватися</button>
+    </form>
+
+    <div class="success-message" id="successMessage"></div>
+    <div class="links">
+        <a href="login.html">Увійти в акаунт</a>
+    </div>
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>
